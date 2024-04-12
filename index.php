@@ -21,8 +21,8 @@
                 <li><a href="#work">Work</a></li>
                 <li><a href="#blog">Blog</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="../login/login.php">Log in</a></li>
-                <li><a href="../login/register.php">Sign up</a></li>
+                <li><a href="login.php">Log in</a></li>
+                <li><a href="register.php">Sign up</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -88,7 +88,7 @@
             </div>
             <a href="#" class="grid two-col-grid">
                 <div class="project">
-                    <img src="../images/wedding.jpeg" alt="">
+                    <img src="wedding.jpeg" alt="">
                     <div class="overlay">
                         <div><h2 class="heading-3">E&T 24</h2>
                             <p>Wedding booked on our platform for MR and Mrs St.Patick on the 2/03/24.</p>
@@ -96,7 +96,7 @@
                     </div>
                 </div>
                 <div class="project">
-                    <img src="../images/executive.jpg" alt="">
+                    <img src="executive.jpg" alt="">
                     <div class="overlay">
                         <div><h2 class="heading-3">J Company</h2>
                             <p>Executive meeting for the Board of Directors.</p>
@@ -115,17 +115,17 @@
             </div>
             <div class="grid three-col-grid">
                 <div class="blog-post">
-                    <img src="../images/blog post1.jpeg" alt="">
+                    <img src="blog post1.jpeg" alt="">
                     <h3><a href="#">Birthday Party</a></h3>
                     <p>Birthday party details on our platform for Mr. Tariq</p>
                 </div>
                 <div class="blog-post">
-                    <img src="../images/blog post2.jpeg" alt="">
+                    <img src="blog post2.jpeg" alt="">
                     <h3><a href="#">World Cup Game</a></h3>
                     <p>World Cup game details</p>
                 </div>
                 <div class="blog-post">
-                    <img src="../images/blog post 3.webp" alt="">
+                    <img src="blog post 3.webp" alt="">
                     <h3><a href="#">NBA Playoffs</a></h3>
                     <p>Playoff Game details</p>
                 </div>
