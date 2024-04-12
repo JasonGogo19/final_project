@@ -21,8 +21,8 @@
                 <li><a href="#work">Work</a></li>
                 <li><a href="#blog">Blog</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="../login/login.html">Log in</a></li>
-                <li><a href="../login/register.html">Sign up</a></li>
+                <li><a href="../login/login.php">Log in</a></li>
+                <li><a href="../login/register.php">Sign up</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
