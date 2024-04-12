@@ -1,0 +1,199 @@
+/* profile_management.css */
+
+root {
+    --c-brand: #fac562;
+    --c-dark: #333;
+    --c-body: #666;
+    --f-base: "Plus Jakarta Sans", sans-serif;
+    --bg-color: #E5E5E5; /* Assuming a background color from your design */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    background: #333; /* Your desired background color */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+
+.container {
+    display: flex;
+    flex-grow: 1;
+}
+
+.navbar {
+    background-color:#f4f7f6;  /* Or whatever color you want */
+    color: #080707;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 24px; /* Adjust the size as needed */
+}
+
+.navbar-links a {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+    margin-left: 20px; /* Space out the links */
+    padding: 5px 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+.navbar-links a:hover {
+    background-color: #fac562;
+}
+
+
+
+.sidebar {
+    background: #f4f7f6; /* Your desired sidebar color */
+    padding: 20px;
+    width: 250px; /* Or your desired width */
+}
+
+.main-content {
+    flex-grow: 1;
+    background: #fff;
+    padding: 20px;
+}
+
+.profile-info {
+    width: 50%; /* Or your desired width */
+    margin: auto; /* This will center the profile-info box */
+    padding: 20px;
+    background: #f9f9f9; /* Your desired background color */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar nav ul {
+    list-style: none;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    display: block;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center; /* Aligns horizontally */
+    align-items: center; /* Aligns vertically */
+    height: calc(100vh - headerHeight); /* Adjust 'headerHeight' to your header's actual height */
+}
+
+.profile-section {
+    width: 50%; /* Or the width you prefer */
+    /* Other styles... */
+    margin: 20px;
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for smaller screens */
+
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc; /* Adjust to match the exact color */
+}
+
+.submit-button {
+    background-color: #fac562;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #fac562; 
+    color: white;
+}
+
+
+/* Add media queries for responsive adjustments */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .profile-section {
+        width: 80%;
+    }
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/* Add more custom styling as needed to match the provided image */

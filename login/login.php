@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - J's Events</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+</head>
+<body>
+    <div class="container">
+        <aside class="welcome-section">
+            <h1>Hey There!</h1>
+            <p>Welcome Back. <br>You are just one step away to your feed.</p>
+            <p>Don't have an account? <a href="register.html" class="sign-up-button">Sign Up</a></p>
+        </aside>
+        <section class="login-section">
+            <form action="login_action.php" method="POST" class="login-form">
+                <h2>SIGN IN</h2>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit" class="login-button">Sign In</button>
+                <div class="remember-me">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Keep me logged in</label>
+                </div>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+                <p class="social-media">Or, Use social media to sign in</p>
+                <div class="social-icons">
+                <a href="#"><i class="lab la-twitter"></i></a>
+                <a href="#"><i class="lab la-facebook"></i></a>
+                <a href="#"><i class="lab la-linkedin"></i></a>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

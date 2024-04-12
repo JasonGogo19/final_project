@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --c-brand: #fac562;
+    --c-dark: #333;
+    --c-body: #666;
+    --f-base: "Plus Jakarta Sans", sans-serif;
+    --bg-color: #E5E5E5; /* Assuming a background color from your design */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--f-base);
+    background-color: var(--bg-color);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    width: 800px; /* Adjust width as needed */
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Simple shadow for depth */
+}
+
+.welcome-section {
+    background-color: #F0F2F5; /* Adjust background color as needed */
+    padding: 30px;
+    width: 40%; /* Adjust size as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: var(--c-dark);
+}
+
+.login-section {
+    padding: 30px;
+    width: 60%; /* Adjust size as needed */
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, p {
+    margin-bottom: 15px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form input {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.remember-me label {
+    margin-left: 10px;
+}
+
+.forgot-password {
+    color: var(--c-brand);
+    margin-bottom: 20px;
+}
+
+.login-button {
+    background-color: var(--c-brand);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.social-media {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+

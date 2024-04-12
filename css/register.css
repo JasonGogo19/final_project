@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500&display=swap');
+
+:root {
+    --c-brand: #5e81f4;
+    --c-dark: #333;
+    --c-light: #f7f7f7;
+    --c-input: #eef1f8;
+    --f-heading: 'Plus Jakarta Sans', sans-serif;
+    --f-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--f-body);
+    background-color: var(--c-light);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fff;
+    width: 900px; /* Adjust width based on your design preference */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.welcome-section, .register-section {
+    padding: 40px;
+}
+
+.welcome-section {
+    background-color: var(--c-input);
+    width: 40%; /* Adjust width based on your design preference */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: var(--c-dark);
+}
+
+.register-section {
+    width: 60%; /* Adjust width based on your design preference */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1, h2, p {
+    font-family: var(--f-heading);
+    margin-bottom: 1rem;
+}
+
+h1 {
+    color: var(--c-brand);
+    font-weight: 500;
+}
+
+h2 {
+    font-weight: 400;
+    color: var(--c-dark);
+    margin-bottom: 2rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: var(--c-input);
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+    outline: none;
+    border-color: var(--c-brand);
+    background-color: #fff;
+}
+
+button.sign-in-button,
+button.register-button {
+    background-color: var(--c-brand);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+button.sign-in-button:hover,
+button.register-button:hover {
+    background-color: var(--c-brand);
+}
+
+.social-icons a {
+    text-decoration: none;
+    margin-right: 0.5rem;
+   
+}
+
+.social-icons a:last-child {
+    margin-right: 0;
+}
+
