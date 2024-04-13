@@ -4,12 +4,12 @@ session_start();
 
 // Check if the user is logged in, if not, redirect to login page
 if (!isset($_SESSION['user_id'])) {
-    header('Location: ../login/login.php');
+    header('Location: login/login.php');
     exit;
 }
 
 // Include the database configuration file
-require '../settings/config.php';
+require 'settings/config.php';
 
 // Initialize variables
 $fullname = '';
@@ -53,7 +53,7 @@ if (!empty($error)) {
 <head>
     <meta charset="UTF-8">
     <title>Profile Management - ProAcc</title>
-    <link rel="stylesheet" href="../css/profile_management.css"> <!-- Update the path -->
+    <link rel="stylesheet" href="css/profile_management.css"> <!-- Update the path -->
 </head>
 <body>
     <nav class="navbar">
@@ -78,7 +78,7 @@ if (!empty($error)) {
             <section class="profile-section">
                 <!-- Profile content here -->
                 <h2>Personal Information</h2>
-                <form id="profileForm" action="../functions/profile_update.php" method="POST">
+                <form id="profileForm" action="functions/profile_update.php" method="POST">
                     <!-- Add your form fields here -->
                     <div class="form-group">
                         <label for="fullname">Full Name:</label>
@@ -118,7 +118,7 @@ if (!empty($error)) {
     <footer>
         <!-- Footer content here -->
     </footer>
-    <script src="../js/modal.js"></script>
+    <script src="js/modal.js"></script>
     <script type='text/javascript'>
         // When the DOM is ready
         document.addEventListener('DOMContentLoaded', function() {
@@ -133,7 +133,7 @@ if (!empty($error)) {
                     modal.style.display = 'none';
                 };
                 okButton.onclick = function() {
-                    window.location.href = 'dashboard.php'; // Replace with your actual dashboard path
+                    window.location.href = 'view/dashboard.php'; // Replace with your actual dashboard path
                 };
                 
                 // Display the modal

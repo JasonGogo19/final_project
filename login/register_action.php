@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         if ($stmt->execute()) {
             // Success
-            header("Location: login.html"); // Redirect to login page upon successful registration
+            header("Location: login.php"); // Redirect to login page upon successful registration
             exit;
         } else {
             // Handle insertion error
@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn->close();
 } else {
     // Redirect to the registration page if the request method is not POST
-    header("Location: register.html");
+    header("Location: register.php");
     exit;
 }
 ?>

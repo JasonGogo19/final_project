@@ -4,12 +4,12 @@ session_start();
 
 // Check if the user is logged in, if not, redirect to login page
 if (!isset($_SESSION['user_id'])) {
-    header('Location: ../login/login.php');
+    header('Location: login/login.php');
     exit;
 }
 
 // Include the database configuration file
-require '../settings/config.php';
+require 'settings/config.php';
 
 // Define variables and initialize with empty values
 $event_name = $event_description = $event_date = $event_time = $event_location = "";
@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <title>Create Event - J's Event</title>
-    <link rel="stylesheet" href="../css/create_event.css">
+    <link rel="stylesheet" href="css/create_events.css">
 
 </head>
 <body>
@@ -66,7 +66,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Check for the session variable and display the message
     if (isset($_SESSION['event_creation_success'])) {
         echo "<div class='success-message'>" . htmlspecialchars($_SESSION['event_creation_success']) . "</div>";
-        // Unset the success message so it doesn't show again after refresh
         unset($_SESSION['event_creation_success']);
     }
     ?>

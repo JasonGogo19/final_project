@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->close();
 } else {
     // Not a POST request
-    header("Location: ../login/login.php"); // Adjust the path as necessary
+    header("Location: login/login.php"); // Adjust the path as necessary
     exit;
 }
 ?>
